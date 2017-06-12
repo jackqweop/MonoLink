@@ -1,0 +1,423 @@
+@charset "UTF-8";
+/* 通用样式 */
+* {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  line-height: 100%;
+  font-weight: normal; }
+
+body {
+  font-size: 12px;
+  font-family: "Microsoft yahei" !important; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+i, em {
+  font-style: normal; }
+
+strong, b {
+  font-weight: normal; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: ''; }
+
+.clearfix {
+  zoom: 1; }
+
+input {
+  outline: none;
+  border: none 0;
+  padding: 0; }
+
+img {
+  display: block;
+  vertical-align: top; }
+
+li {
+  list-style: none; }
+
+a img {
+  border: 0; }
+
+img {
+  display: block; }
+
+table, th, td, tr {
+  padding: 0; }
+
+table {
+  border-collapse: collapse; }
+
+/* 公共顶部 */
+.header {
+  height: 29px;
+  background: #F5F5F5;
+  border-bottom: 1px solid #e6e6e6; }
+
+.head-count {
+  width: 1200px;
+  margin: 0 auto; }
+  .head-count a:hover {
+    text-decoration: underline;
+    color: #c00; }
+
+.head-left {
+  color: #daccda; }
+  .head-left a {
+    color: #666;
+    line-height: 28px; }
+
+.quick-menu li {
+  float: left;
+  position: relative;
+  line-height: 30px;
+  z-index: 100; }
+  .quick-menu li a {
+    position: relative;
+    padding: 8px 10px;
+    *padding: 8px 10px 5px;
+    color: #666;
+    line-height: 28px;
+    background: url(../css/img/sg.png) no-repeat right center;
+    border: 1px solid #f5f5f5;
+    border-bottom: none; }
+    .quick-menu li a:hover {
+      text-decoration: underline;
+      color: #c00; }
+  .quick-menu li i {
+    padding: 0 10px 3px 6px;
+    width: 7px;
+    height: 3px;
+    background: url(../css/img/arrow-down.png) no-repeat center;
+    display: inline-block;
+    transition: .3s;
+    -ms-transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s; }
+  .quick-menu li:hover i {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg); }
+
+.quick-menu .login {
+  background-image: none; }
+  .quick-menu .login a {
+    color: #c40; }
+
+.quick-menu .header-hover a {
+  padding-right: 0; }
+
+.quick-menu .last a {
+  background-image: none; }
+
+.quick-menu .active a {
+  background: #fff;
+  z-index: 999;
+  border: 1px solid #ededed;
+  border-top: none;
+  border-bottom: none; }
+
+.quick-menu .code {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 29px;
+  width: 124px;
+  height: 165px;
+  text-align: center;
+  border: 1px solid #ededed;
+  background: #fff;
+  padding: 23px 20px;
+  line-height: 18px;
+  color: #333;
+  z-index: 100; }
+
+/*公共搜索*/
+.header-logo {
+  width: 1200px;
+  height: 88px;
+  margin: 30px auto 0; }
+
+.logo {
+  width: 275px;
+  height: 50px;
+  background: url(../img/zol-logo.png) no-repeat;
+  text-indent: -999em;
+  margin-right: 115px; }
+  .logo .zolcom-links {
+    float: left;
+    width: 193px;
+    height: 50px; }
+  .logo .tuan-links {
+    float: left;
+    width: 82px;
+    height: 50px; }
+
+.search-box input[type="text"] {
+  width: 427px;
+  line-height: 20px;
+  height: 20px;
+  border: 2px solid #c40000;
+  font-size: 14px;
+  padding: 6px 10px;
+  color: #666; }
+
+.search-box input[type="submit"] {
+  position: absolute;
+  top: 0;
+  *top: 1px;
+  right: -89px;
+  width: 89px;
+  height: 36px;
+  background: #C40000;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  font-family: "Microsoft yahei";
+  cursor: pointer; }
+
+.search-box .search {
+  position: relative;
+  width: 451px;
+  height: 36px;
+  margin: 8px 0 10px;
+  z-index: 2;
+  /*获取焦点时消失*/ }
+  .search-box .search span {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    color: #666;
+    font-size: 14px; }
+
+.search-box .search-list {
+  width: 447px;
+  position: absolute;
+  left: 0;
+  top: 36px;
+  border: 1px solid #e3e3e3;
+  display: none; }
+  .search-box .search-list li {
+    line-height: 24px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #666; }
+    .search-box .search-list li:hover {
+      background: #f5f5f5;
+      color: #c40000;
+      cursor: pointer; }
+
+.search-box .hot-search li {
+  float: left;
+  margin-right: 20px; }
+  .search-box .hot-search li a {
+    color: #999; }
+    .search-box .hot-search li a:hover {
+      color: #C40000;
+      text-decoration: underline; }
+
+.header-logo .slogan {
+  text-align: right; }
+  .header-logo .slogan a {
+    display: block;
+    width: 124px;
+    height: 18px;
+    background: url(../img/solgan.png) no-repeat;
+    margin: 8px 0 6px 42px; }
+  .header-logo .slogan p {
+    font-size: 14px;
+    color: #666; }
+    .header-logo .slogan p span {
+      color: #c31f1f; }
+
+/*公用底部指南*/
+.wrap-footer {
+  height: 240px;
+  border-top: 1px solid #d9d9d9;
+  margin-top: 20px; }
+
+.group-footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 29px; }
+  .group-footer dl {
+    float: left;
+    width: 175px; }
+  .group-footer dt {
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+    font-size: 14px; }
+  .group-footer dd {
+    margin-bottom: 10px;
+    color: #666; }
+    .group-footer dd:hover a {
+      color: #c00;
+      text-decoration: underline; }
+
+.service-number {
+  width: 130px;
+  float: left;
+  margin-left: 12px;
+  text-align: center; }
+  .service-number h5 {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold; }
+    .service-number h5 .code {
+      margin: -6px 0 10px; }
+      .service-number h5 .code img {
+        display: inline-block; }
+
+.group-footer .sina {
+  display: block;
+  height: 17px;
+  background: url(../css/img/sina.png) no-repeat left center;
+  padding-left: 26px; }
+  .group-footer .sina:hover {
+    text-decoration: underline;
+    color: #c00; }
+
+/*公共右侧置顶*/
+.widget {
+  width: 40px;
+  position: fixed;
+  left: 50%;
+  top: 68%;
+  margin-left: 600px;
+  z-index: 1000; }
+  .widget li {
+    width: 24px;
+    height: 31px;
+    background-color: #5e5e5d;
+    margin-bottom: 6px;
+    border-radius: 2px;
+    line-height: 14px;
+    padding: 5px 8px 0 8px;
+    position: relative; }
+    .widget li a {
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      display: block; }
+    .widget li:hover {
+      background-color: #f33; }
+  .widget .up {
+    background: url(../css/img/arrow-up.png) no-repeat 12px center #5e5e5d; }
+  .widget .code {
+    position: absolute;
+    left: -118px;
+    top: -30px;
+    width: 106px;
+    border: 1px solid #cfcfcf;
+    padding: 10px 5px;
+    background: #fff;
+    text-align: center; }
+  .widget .num {
+    color: #f33; }
+  .widget .phone {
+    margin: 8px 0 6px; }
+  .widget .pic {
+    margin-bottom: 6px; }
+
+/*公共底部*/
+.footer-nav-bar {
+  padding: 25px 0 30px;
+  background: #2d2d2d; }
+  .footer-nav-bar .wrapper {
+    width: 1200px;
+    margin: 0 auto; }
+
+.partners {
+  position: relative;
+  zoom: 1;
+  padding: 0 135px 0 55px;
+  height: 24px;
+  overflow: hidden;
+  font: 12px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+  color: #666; }
+  .partners a {
+    margin: 0 10px;
+    color: #fff;
+    white-space: nowrap; }
+    .partners a:hover {
+      margin: 0 10px;
+      color: #fff;
+      white-space: nowrap; }
+  .partners .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc; }
+  .partners .more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 12px 0 0;
+    background-position: 100% -32px;
+    color: #fff;
+    cursor: pointer; }
+  .partners .more-open {
+    background-position: 100% -51px; }
+
+.footer-nav {
+  margin: 0 0 0 -10px;
+  padding: 7px 0 0;
+  font: 12px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+  color: #666; }
+  .footer-nav a {
+    margin: 0 10px;
+    color: #fff;
+    white-space: normal;
+    word-break: keep-all; }
+    .footer-nav a:hover {
+      margin: 0 10px;
+      color: #fff;
+      white-space: normal;
+      word-break: keep-all; }
+
+.copyright {
+  margin: 0 0 0 -10px;
+  padding: 20px 0 0;
+  font: 12px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+  color: #666; }
+  .copyright a {
+    margin: 0 10px;
+    color: #999;
+    white-space: normal;
+    word-break: keep-all; }
+    .copyright a:hover {
+      margin: 0 10px;
+      color: #999;
+      white-space: normal;
+      word-break: keep-all; }
+  .copyright span {
+    padding: 0 0 0 15px;
+    color: #999; }
+
+.authentication {
+  padding: 14px 0 0; }
+  .authentication img {
+    float: left;
+    margin: 0 7px 0 0; }
+
+.footer-nav-bar a:hover {
+  text-decoration: underline; }

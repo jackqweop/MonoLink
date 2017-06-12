@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login1.css">
+    <script src='../js/require.js' data-main='../js/login.js'></script>
+</head>
+
+<body class="login-index">
+    <div class="wrapper">
+        <div class="header clearfix">
+            <!-- register-bar add by hanjw 2014-6-24-->
+            <div class="register-bar"><a href="reg.html">立即注册</a>还没有ZOL商城账号？</div>
+            <!-- //register-bar add by hanjw 2014-6-24-->
+            <div class="logo">
+                <!-- modify by hanjw 2014-6-24 -->
+                <a title="ZOL商城" href="../index.html"><img width="182" height="60" title="ZOL商城" alt="ZOL商城" src="../img/shop_182x60.png">
+                    <p>中关村在线旗下网上商城</p>
+                </a>
+                <!-- modify by hanjw 2014-6-24 -->
+            </div>
+        </div>
+        <form id="J_loginForm">
+            <div class="login-wrap clearfix">
+                <div class="ad-div">
+                    <div>
+                        <a href="#"><img width="520" height="350" src="../img/ad2_1.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="login-layer">
+                    <div class="login-head">
+                        
+                        <h3>登录ZOL商城</h3>
+                    </div>
+                    <div class="login-content" id="J_login_common">
+                        
+                        <div class="form-item username">
+                            <input type="text" value="" autocomplete="off" placeholder="用户名" class="text" id="username" name="zolShopUserName" maxlength="100">
+                            <i class="remove" style="display:none;"></i>
+                            <ul style="display:none;" class="account-list" id="J_accountList">
+                            </ul>
+                        </div>
+                        <div class="form-item">
+                            <input type="password" autocomplete="off" placeholder="密码" class="text" id="password" maxlength="20">
+                            <i class="remove" style="display:none;"></i> <span class="case-tips" id="J_loginCapsLock">大小写锁定已打开<i class="ico"></i></span> </div>
+                        <div class="form-other">
+                            <label class="autologon">
+                                <!--<input type="checkbox" name="" value="">记住登录状态-->
+                            </label>
+                            <a href="#">忘记密码？</a></div>
+                        <input type="hidden" value="1" name="J_login_type" id="J_login_type">
+                        <input type="button" value="登 录" class="login-layer-btn" id="btnLogin">
+                        <!-- <span style="display:none;" class="submit-loading" id="J_loginingBtn">正在登录...</span> -->
+                    </div>
+                    
+                    <div class="collaborate clearfix">
+                        <div class="xian"></div>
+                        <p>合作账号登录</p>
+                        <div class="xian"></div>
+                    </div>
+                    <div class="login-foot clearfix">
+                        <a class="weixin" href="#">用微博账号登录</a>
+                        <a class="sina" href="#">用微博账号登录</a>
+                        <a class="qq" href="#">用QQ账号登录</a>
+                        <a class="alipay" href="#">用支付宝账号登录</a>
+                        <a class="baidu" href="#">用百度账号</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="wrapper clearfix">
+            <div class="about"><a href="#">关于ZOL商城</a>|<a href="#">联系我们</a>|<a href="#">帮助中心</a></div>
+            <div class="copyright">©
+                <script type="text/javascript">
+                var yearStr;
+                now = new Date();
+                yearStr = now.getFullYear();
+                document.write(yearStr);
+                </script>2017. 中关村在线 版权所有</div>
+        </div>
+    </div>
+</body>
+
+</html>

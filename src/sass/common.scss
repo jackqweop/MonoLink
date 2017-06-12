@@ -1,0 +1,66 @@
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px/1.5 Arial;
+  color: #333;
+}
+
+select, input, button {
+  vertical-align: middle;
+  font-size: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+.clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+  }
+  *zoom: 1;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: #c00;
+    text-decoration: underline;
+  }
+}
+
+.login-head .close, .login-layer-btn, .submit-loading {
+  background: url(../css/img/shop_login_bg.png) no-repeat;
+}
+
+.login-foot {
+  .sina, .qq, .alipay, .baidu {
+    background: url(../css/img/shop_login_bg.png) no-repeat;
+  }
+}
+
+.login-wrong-tips, .case-tips .ico {
+  background: url(../css/img/shop_login_bg.png) no-repeat;
+}
+
+.login-hd {
+  .phone-login, .common-login {
+    background: url(../css/img/shop_login_bg.png) no-repeat;
+  }
+}
