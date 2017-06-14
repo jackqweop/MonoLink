@@ -1,64 +1,70 @@
 require(['config'], function() {
-	require(['jquery'], function($) {
-			$(document).ready(function() {
-		        $('.nav-tit,.menu-list').on('mouseenter', function() {
-		            $('.menu-list').show();
-		        }).on('mouseleave', function() {
-		            $('.menu-list').hide();
-		        })
-	    	});
-	    	let $indexlist = $('.commodity-list');
-	    	let pageNo =1;
-            let qty = 15 ;
+    require(['jquery'], function($) {
+        $(document).ready(function() {
+            $('.nav-tit,.menu-list').on('mouseenter', function() {
+                $('.menu-list').show();
+            }).on('mouseleave', function() {
+                $('.menu-list').hide();
+            })
+        });
+        let $indexlist = $('.commodity-list');
+        let pageNo = 1;
+        let qty = 15;
+        $.ajax({
+
+            url: '../api/list.php',
+            dataType: 'json',
+            data: {
+                page: pageNo,
+                qty: qty
+            },
+            success: function(res) {
+                // console.log(data)
+                // return;
+                showList(res);
+                var pageQty = Math.ceil(res.total / res.qty);
+                var page_str = '';
+                for (var i = 1; i <= pageQty; i++) {
+                    page_str += `<a ${res.pageNo==i ?'class="sel"' : ''} href="#">${i}</a>`
+                }
+                $('.page').html(page_str);
+            }
+        });
+        $('.page').on('click', 'a', function() {
+            $(this).parent().addClass('sel').siblings().removeClass('');
+
+            pageNo = $(this).text();
             $.ajax({
 
                 url: '../api/list.php',
                 dataType: 'json',
-                data:{
-                    page:pageNo,
-                    qty:qty
+                data: {
+                    page: pageNo,
+                    qty: qty
                 },
                 success: function(res) {
                     // console.log(data)
                     // return;
-                	showList(res);
-                	var pageQty = Math.ceil(res.total/res.qty);
-                    var page_str = '';
-                    for(var i=1;i<=pageQty;i++){
-                    	page_str += `<a ${res.pageNo==i ?'class="sel"' : ''} href="#">${i}</a>`
-                    }
-                    $('.page').html(page_str);
+                    showList(res);
                 }
             });
-            $('.page').on('click','a',function(){
-            	$(this).parent().addClass('sel').siblings().removeClass('');
+            return false;
+        });
+            $list = $('.commodity-list');
+            
+            $list.on('click', 'a', function() {
+                $(location).attr('href', '../html/datapage.html?id=' + this.id);
 
-            	pageNo = $(this).text();
-            	$.ajax({
-
-	                url: '../api/list.php',
-	                dataType: 'json',
-	                data:{
-	                    page:pageNo,
-	                    qty:qty
-	                },
-	                success: function(res) {
-	                    // console.log(data)
-	                    // return;
-	                	showList(res);
-	                }
-	            });
-	            return false;
             });
-            function showList(res){
-            	
-                    let html = res.data.map(item=>{
-                        return `
+        function showList(res) {
+
+            let html = res.data.map(item => {
+                return `
 										<li class="commodity-item">
-			                <a class="commodity-item-link" href="../html/datapage.html">
+			                <a class="commodity-item-link" href="#" id="${item.id}">
 			                    <div class="item-pic">
 			                        <div class="pic-img">
-			                            <img class="lazy" data-src="http://localhost/ztuan/src/${item.imgurl}" src="../${item.imgurl}">
+			                            <img class="lazy" src="../${item.imgurl}">
 			                        </div>
 			                    </div>
 			                    <div class="item-info">
@@ -83,10 +89,11 @@ require(['config'], function() {
 			                </a>
 			            </li>
             			`
-                    }).join('');
-                    $indexlist.html(html);
+            }).join('');
+            $indexlist.html(html);
 
-                    
-            }
-	});
+        
+        }
+
+    });
 });

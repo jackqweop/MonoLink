@@ -1,0 +1,407 @@
+.zs-inner {
+  border: 1px solid #ededed;
+  overflow: hidden; }
+
+.zs-deal-detail {
+  float: left;
+  width: 1000px; }
+
+.zs-wrapper {
+  margin: 0 auto;
+  width: 1200px; }
+
+.zs-focus {
+  float: left;
+  padding: 10px 0 0 20px;
+  width: 400px;
+  position: relative;
+  z-index: 8; }
+
+.zs-big-pic img {
+  display: block;
+  margin: 0 0 10px; }
+
+.zs-deal-wrap {
+  float: right;
+  padding: 10px 20px 0 0;
+  width: 530px; }
+
+.zs-commodity-title {
+  padding: 7px 0 0;
+  font: 16px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+  display: block;
+  margin-bottom: 10px; }
+
+.zs-price-panel {
+  margin: 0 0 0;
+  padding: 5px 10px;
+  background: #f7f7f7; }
+  .zs-price-panel dl {
+    padding: 0 0 0 75px;
+    position: relative;
+    zoom: 1;
+    line-height: 30px; }
+  .zs-price-panel dt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+    color: #666; }
+  .zs-price-panel dd {
+    overflow: hidden;
+    zoom: 1; }
+
+.zs-sale-price .zs-price {
+  float: left;
+  margin: -2px 0 0;
+  height: 32px;
+  overflow: hidden;
+  font-size: 16px;
+  vertical-align: middle;
+  color: #c00; }
+  .zs-sale-price .zs-price em {
+    padding: 0 0 0 5px;
+    font-family: tahoma;
+    font-size: 30px;
+    font-weight: bold; }
+
+.zs-detail-infor {
+  padding: 10px 0 20px; }
+  .zs-detail-infor dl {
+    position: relative;
+    zoom: 1; }
+
+.zs-freight-a {
+  margin: 0 10px;
+  padding: 5px 0 0;
+  z-index: 2; }
+  .zs-freight-a dt {
+    top: 0; }
+
+.zs-detail-infor dt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  line-height: 32px;
+  color: #666; }
+
+.zs-detail-infor dd {
+  padding: 0 0 0 65px;
+  line-height: 32px; }
+
+.zs-freight-area {
+  float: left;
+  position: relative; }
+
+.area-selected-wrap {
+  line-height: 23px; }
+
+.area-selected {
+  position: relative;
+  float: left;
+  z-index: 5; }
+  .area-selected .area-name {
+    position: relative;
+    display: inline-block;
+    height: 23px;
+    border: 1px solid #e6e6e6;
+    padding: 0 20px 0 6px;
+    line-height: 23px;
+    cursor: pointer;
+    background-position: 100% 0;
+    z-index: 6;
+    background-color: #fff; }
+
+.area-selected-infor, #heyueText {
+  margin-left: 10px;
+  float: left; }
+
+.area-selected-infor .bold {
+  font-weight: bold; }
+
+.zs-detail-infor dl {
+  position: relative;
+  zoom: 1; }
+
+.zs-evaluate {
+  margin: 5px 10px 0; }
+
+.zs-detail-infor dt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  line-height: 32px;
+  color: #666; }
+
+.zs-detail-infor dd {
+  padding: 0 0 0 65px;
+  line-height: 32px; }
+
+.zs-evaluate dd a {
+  color: #333; }
+
+.zs-evaluate dd em {
+  color: #f33;
+  font-weight: bold; }
+
+.zs-evaluate .line {
+  padding: 0 10px;
+  color: #e6e6e6; }
+
+.zs-skin-inner {
+  margin: 10px 0px 15px;
+  border-top: 1px solid #f2f2f2; }
+
+.zs-detail-infor dl {
+  position: relative;
+  zoom: 1; }
+
+.zs-colour-type, .zs-suit {
+  padding: 15px 0 0; }
+
+.zs-skin-inner .zs-quantity dt, .zs-skin-inner .zs-suit dt {
+  left: 10px; }
+
+.zs-colour-type dt, .zs-suit dt {
+  top: 20px; }
+
+.zs-skin-inner dd {
+  padding-left: 75px; }
+
+.zs-detail-infor dd {
+  padding: 0 0 0 65px;
+  line-height: 32px; }
+
+.zs-options li {
+  float: left;
+  margin: 5px 6px 0 0;
+  position: relative; }
+  .zs-options li a, .zs-options li span {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #e6e6e6;
+    color: #333;
+    background-color: #FFF; }
+
+.zs-options .cur .can-buy, .zs-options li .can-buy:hover {
+  padding: 0 9px;
+  height: 26px;
+  line-height: 26px;
+  border: 2px solid #c00;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer; }
+
+.zs-options .cur .can-buy i {
+  display: block;
+  position: absolute;
+  right: 1px;
+  bottom: 2px;
+  width: 10px;
+  height: 10px;
+  background-position: 0 -346px;
+  font: 0/0 arial; }
+
+.zs-suit-infor {
+  margin: 5px 0 0;
+  padding: 8px 10px;
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+  line-height: 20px; }
+
+.zs-detail-infor dl {
+  position: relative;
+  zoom: 1; }
+
+.zs-quantity {
+  padding: 20px 0 0; }
+
+.zs-skin-inner .zs-quantity dt, .zs-skin-inner .zs-suit dt {
+  left: 10px; }
+
+.zs-quantity dt {
+  top: 20px; }
+
+.zs-skin-inner dd {
+  padding-left: 75px; }
+
+.zs-quantity dd {
+  color: #999; }
+
+.amount-widget {
+  float: left;
+  margin: 0 10px 0 0;
+  width: 102px;
+  height: 28px;
+  border: 1px solid #e6e6e6; }
+
+.zs-no-decrease {
+  background-position: 0 -197px; }
+
+.zs-goods-number {
+  float: left;
+  width: 44px;
+  height: 28px;
+  text-align: center;
+  font: 12px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+  border: 0 none;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  color: #333; }
+
+select, input, button {
+  vertical-align: middle;
+  font-size: 100%; }
+
+.zs-increase {
+  background-position: -32px -169px;
+  float: left;
+  width: 28px;
+  height: 28px;
+  background-color: #f8f8f8;
+  cursor: pointer; }
+
+.zs-no-increase, .zs-decrease, .zs-no-decrease {
+  float: left;
+  width: 28px;
+  height: 28px;
+  background-color: #f8f8f8;
+  cursor: pointer; }
+
+.zs-deal-btn {
+  padding: 30px 0 0 65px;
+  height: 50px; }
+
+.zs-buy-now {
+  width: 140px;
+  height: 50px;
+  color: #fff;
+  background: #c00; }
+  .zs-buy-now:hover {
+    color: #fff;
+    background: #c00; }
+
+.zs-store-buy, .zs-add-cart {
+  width: 138px;
+  height: 48px;
+  border: 1px solid #ffd9d9;
+  background-color: #ffeded;
+  color: #c00;
+  line-height: 48px; }
+
+.zs-buy-now, .zs-store-buy, .zs-add-cart, .zs-buy-off, .zs-presell-btn, .zs-presell-over-btn, .zs-look-comment {
+  float: left;
+  margin: 0 10px 0 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font: 18px/50px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+  text-align: center; }
+
+.zs-prev, .zs-next, .zs-collect i, .zs-complain i, .zs-share-title i, .zs-layer-tab li, .zs-freight-area .zs-close {
+  background: url(img/bg1.png) no-repeat; }
+
+.zs-payment .zs-alipay, .zs-payment .zs-cod, .zs-payment .zs-cash, .zs-payment .zs-slot-card {
+  background: url(img/bg1.png) no-repeat; }
+
+.zs-options b, .zs-options .cur i {
+  background: url(img/bg1.png) no-repeat; }
+
+.zs-increase, .zs-no-increase, .zs-decrease, .zs-no-decrease, .zs-quantity .zs-goods-number-tips, .zs-add-cart, .zs-bz-ico {
+  background: url(img/bg1.png) no-repeat; }
+
+.zs-goods-category dt, .zs-goods-category li {
+  background: url(img/bg1.png) no-repeat; }
+
+.zs-module-hd, .zs-no-comment-prompt {
+  background: url(img/bg1.png) no-repeat; }
+
+.zs-page .zs-prev, .zs-page .no-zs-prev, .zs-page .zs-next, .zs-page .no-zs-next {
+  background: url(img/bg1.png) no-repeat; }
+
+.zs-enter-message .zs-tooltip, .zs-quick-dove, .zs-qq-consult, .zs-success, .zs-layer-box .zs-close, .zs-failure, .editor-links a {
+  background: url(img/bg1.png) no-repeat; }
+
+.zs-tabbar .phone-purchase a, .zs-tabbar .phone-purchase .ico {
+  background: url(img/bg1.png) no-repeat; }
+
+.zs-skin-inner .zs-hd .zs-close {
+  background: url(img/bg1.png) no-repeat; }
+
+.goods-category li, .goods-category dt {
+  background: url(img/bg1.png) no-repeat; }
+
+.category-nav-title .ico, .zs-presell-rules .zs-hd .zs-ico {
+  background: url(img/bg1.png) no-repeat; }
+
+.to-phone-buy .title {
+  background: url(img/bg1.png) no-repeat; }
+  .to-phone-buy .title i {
+    background: url(img/bg1.png) no-repeat; }
+
+.zs-no-decrease {
+  background-position: 0 -197px; }
+
+.zs-increase {
+  background-position: -32px -169px; }
+
+.smallList img {
+  width: 80px;
+  display: inline-block; }
+
+.gds-bigzoom img {
+  min-width: 800px; }
+
+.chebian {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1800;
+  width: 37px;
+  height: 100%;
+  background: #2d2d2d; }
+  .chebian .ric {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: -250px 0 0;
+    width: 37px;
+    height: 266px; }
+    .chebian .ric .cart {
+      position: relative;
+      zoom: 1;
+      margin: 0 0 12px;
+      background-color: #2d2d2d;
+      top: 100px; }
+      .chebian .ric .cart .ico {
+        background: url(img/bar_ico.png) no-repeat;
+        width: 37px;
+        height: 37px;
+        cursor: pointer;
+        background-position: 0 -111px; }
+      .chebian .ric .cart .num {
+        position: absolute;
+        top: -4px;
+        right: 3px;
+        padding: 1px 4px 0;
+        height: 13px;
+        font: 12px/13px Arial;
+        background: #f33;
+        color: #fff;
+        border-radius: 10px; }
+
+.shuju {
+  margin: 20px auto; }
+
+.u-flyer {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  position: fixed;
+  z-index: 9999; }

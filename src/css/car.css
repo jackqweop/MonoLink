@@ -1,0 +1,317 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+th,
+td,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+hr {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 12px/1.5 Arial;
+  color: #333; }
+
+select,
+input,
+button {
+  vertical-align: middle;
+  font-size: 100%; }
+
+ul,
+ol {
+  list-style: none; }
+
+fieldset,
+img {
+  border: 0; }
+
+em {
+  font-style: normal; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0; }
+
+a {
+  color: #36c;
+  text-decoration: none; }
+  a:hover {
+    color: #c00;
+    text-decoration: underline; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px; }
+
+.header-car-logo {
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 960px; }
+
+.logol {
+  float: left; }
+  .logol img {
+    display: block;
+    float: left; }
+  .logol span {
+    float: left;
+    margin: 8px 0 0 8px;
+    padding: 0 0 0 10px;
+    border-left: 1px solid #e6e6e6;
+    font: 14px/44px arial;
+    color: #666;
+    cursor: pointer; }
+
+/* flow-step */
+.flow-step {
+  float: right;
+  padding: 2px 0 0; }
+  .flow-step li {
+    float: left;
+    width: 90px;
+    padding: 0 14px 0 0;
+    background: url(img/step-bg.png) no-repeat;
+    background-position: 100% -74px;
+    background-color: #e6e6e6;
+    font: 14px/36px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+    text-align: center; }
+  .flow-step .s1 {
+    padding: 0 14px; }
+  .flow-step .s5 {
+    padding: 0;
+    background: #e6e6e6; }
+
+.flow-step-1 .s1,
+.flow-step-2 .s2,
+.flow-step-3 .s3,
+.flow-step-4 .s4,
+.flow-step-5 .s5 {
+  background-position: 100% -37px;
+  background-color: #e02d2d;
+  color: #fff; }
+
+.flow-step-2 .s1,
+.flow-step-3 .s2,
+.flow-step-4 .s3,
+.flow-step-5 .s4 {
+  background-position: 100% 0;
+  background-color: #ffcccc;
+  color: #c00; }
+
+.flow-step-3 .s1 {
+  background-position: 100% -148px;
+  background-color: #ffcccc;
+  color: #c00; }
+
+.flow-step-4 .s1,
+.flow-step-4 .s2 {
+  background-position: 100% -148px;
+  background-color: #ffcccc;
+  color: #c00; }
+
+.flow-step-5 .s1,
+.flow-step-5 .s2,
+.flow-step-5 .s3 {
+  background-position: 100% -148px;
+  background-color: #ffcccc;
+  color: #c00; }
+
+.wrapperr {
+  width: 960px;
+  margin: 0 auto; }
+  .wrapperr .shop-car {
+    margin-top: 20px;
+    padding: 30px 0; }
+    .wrapperr .shop-car table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      table-layout: fixed; }
+    .wrapperr .shop-car th {
+      height: 36px;
+      background: #f5f5f5;
+      border-top: 2px solid #e02d2d;
+      line-height: 36px;
+      font-weight: normal;
+      text-align: center; }
+    .wrapperr .shop-car .th-1 {
+      width: 62px; }
+    .wrapperr .shop-car .th-2 {
+      width: 217px;
+      padding: 0 0 0 100px;
+      text-align: left; }
+    .wrapperr .shop-car .th-3 {
+      width: 122px; }
+    .wrapperr .shop-car .th-4 {
+      width: 106px; }
+    .wrapperr .shop-car .th-5 {
+      width: 121px; }
+    .wrapperr .shop-car .th-6 {
+      width: 107px; }
+    .wrapperr .shop-car .th-7 {
+      width: 81px; }
+    .wrapperr .shop-car td {
+      padding: 10px;
+      border-top: 1px solid #e3e3e3;
+      border-bottom: 1px solid #e3e3e3;
+      text-align: center; }
+    .wrapperr .shop-car .s-infor {
+      border-left: 1px solid #e3e3e3;
+      padding: 10px 10px 10px 12px;
+      width: 357px; }
+      .wrapperr .shop-car .s-infor input {
+        float: left;
+        margin: 24px 10px 0 0; }
+      .wrapperr .shop-car .s-infor .pic {
+        float: left;
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ccc;
+        line-height: 58px;
+        text-align: center;
+        background: #fff; }
+        .wrapperr .shop-car .s-infor .pic img {
+          vertical-align: middle; }
+      .wrapperr .shop-car .s-infor .inforbox {
+        float: left;
+        width: 240px;
+        padding: 0 0 0 10px;
+        line-height: 20px;
+        text-align: left; }
+        .wrapperr .shop-car .s-infor .inforbox .tit {
+          margin: -2px 0 4px;
+          height: 40px;
+          line-height: 20px;
+          font-weight: normal;
+          font-size: 12px;
+          overflow: hidden; }
+      .wrapperr .shop-car .s-infor .info-con {
+        height: 20px;
+        line-height: 20px;
+        color: #666; }
+        .wrapperr .shop-car .s-infor .info-con span {
+          cursor: pointer; }
+    .wrapperr .shop-car .s-price {
+      width: 102px; }
+    .wrapperr .shop-car .s-amount {
+      width: 130px; }
+      .wrapperr .shop-car .s-amount .buy-num {
+        position: relative;
+        width: 110px;
+        height: 20px;
+        padding: 31px 0;
+        text-align: center; }
+        .wrapperr .shop-car .s-amount .buy-num .minus,
+        .wrapperr .shop-car .s-amount .buy-num .plus {
+          float: left;
+          width: 10px;
+          height: 10px;
+          line-height: 10px;
+          background: #fff;
+          color: #333;
+          text-align: center;
+          border: 1px solid #ccc;
+          overflow: hidden; }
+        .wrapperr .shop-car .s-amount .buy-num .minus {
+          margin: 5px 8px 0 10px; }
+        .wrapperr .shop-car .s-amount .buy-num .plus {
+          margin: 5px 0 0 8px; }
+        .wrapperr .shop-car .s-amount .buy-num .text-amount {
+          width: 28px;
+          height: 16px;
+          height: auto\9;
+          float: left;
+          padding: 1px 3px;
+          text-align: center;
+          border: 1px solid; }
+    .wrapperr .shop-car .s-agio {
+      width: 101px; }
+      .wrapperr .shop-car .s-agio .icon {
+        background-color: #ce1a1b;
+        color: #fff;
+        display: inline-block;
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+        padding: 0 3px; }
+    .wrapperr .shop-car .s-total {
+      width: 87px; }
+      .wrapperr .shop-car .s-total em {
+        color: #ff0000;
+        font-family: "verdana"; }
+    .wrapperr .shop-car .s-del {
+      width: 61px;
+      border-right: 1px solid #e3e3e3; }
+      .wrapperr .shop-car .s-del .s-delbox {
+        position: relative; }
+        .wrapperr .shop-car .s-del .s-delbox a {
+          display: block;
+          line-height: 20px; }
+    .wrapperr .shop-car .total-price {
+      padding: 0 10px 0 0;
+      height: 52px;
+      line-height: 52px;
+      text-align: right; }
+      .wrapperr .shop-car .total-price span {
+        color: #666; }
+      .wrapperr .shop-car .total-price em {
+        color: #ff0000;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: verdana; }
+    .wrapperr .shop-car .order-foot {
+      position: relative;
+      padding: 0 0 0 12px;
+      height: 33px;
+      border: 1px solid #e3e3e3;
+      background: #f5f5f5;
+      line-height: 33px; }
+      .wrapperr .shop-car .order-foot label {
+        float: left;
+        padding: 0 25px 0 0; }
+        .wrapperr .shop-car .order-foot label a {
+          float: left;
+          margin: 0 30px 0 0; }
+        .wrapperr .shop-car .order-foot label .go-shopping {
+          float: none;
+          position: absolute;
+          top: 0;
+          right: 150px;
+          margin: 0;
+          font-family: "simsun"; }
+        .wrapperr .shop-car .order-foot label .accounting-btn {
+          position: absolute;
+          top: -1px;
+          right: -1px;
+          width: 130px;
+          height: 35px;
+          font: 18px/35px "Microsoft YaHei";
+          color: #fff;
+          border: 0 none;
+          background: url(img/pic1.png) no-repeat;
+          background-position: 0 -113px;
+          cursor: pointer; }

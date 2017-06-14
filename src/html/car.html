@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/car.css">
+    <script src='../js/require.js' data-main='../js/car.js'></script>
+</head>
+
+<body>
+    <!-- 公用头部 -->
+    <div class="header">
+        <div class="head-count clearfix">
+            <div class="head-left fl">
+                <a href="../index.html">ZOL商城首页</a> &nbsp; |&nbsp;
+                <a href="../index.html">中关村在线</a>
+            </div>
+            <ul class="quick-menu fr">
+                <li class="login"><a href="html/login.html">请登录</a><a href="html/reg.html">免费注册</a></li>
+                
+                <li><a href="#">我的订单</a></li>
+                <li class="header-hover"><a href="#">关注团购<i></i></a>
+                    <div class="code"><img src="../img/zolDingYue.jpg" alt="">
+                        <p> 微信关注: ZOL商城</p>
+                        <p>扫码赢优惠&nbsp;订单时时查</p>
+                    </div>
+                </li>
+                <li class="header-hover"><a href="#">订阅推荐<i></i></a></li>
+                <li class="help"><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="header-car-logo clearfix">
+        <div class="logol">
+            <a href="../index.html">
+                <img src="../img/carlogo.jpg" alt="">
+                <img src="../img/logo-text.png" alt="">
+            </a>
+        </div>
+        <div class="flow-step">
+            <ul class="flow-step-1">
+                <li class="s1">加入购物车</li>
+                <li class="s2">下订单</li>
+                <li class="s3">去付款</li>
+                <li class="s4">确认收货</li>
+                <li class="s5">评价</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 购物车 -->
+    <div class="wrapperr">
+        <form action="">
+            <div class="shop-car">
+                <table width="100%">
+                    <tbody id="cardata">
+                        <!-- <tr class="car-top">
+                            <th class="th-1"></th>
+                            <th class="th-2">所选商品</th>
+                            <th class="th-3">单价（元）</th>
+                            <th class="th-4">数量</th>
+                            <th class="th-5">优惠</th>
+                            <th class="th-6">小计（元）</th>
+                            <th class="th-7">操作</th>
+                        </tr> -->
+                        <!-- <tr id="cardata">
+                            <td colspan="2" class="s-infor">
+                                <input type="checkbox">
+                                <a href="#" class="pic">
+                                    <img width="80" height="80" src="../img/b1.jpg" alt="">
+                                </a>
+                                <div class="inforbox">
+                                    <h3 class="tit">
+									<a href="#">
+										msi微星 GL62M 7RD-223CN  15.6英寸游戏笔记本电脑
+									</a>
+								</h3>
+                                    <div class="info-con">
+                                        <span>套装：官方标配</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="s-price">
+                                <em>5388.00</em>
+                            </td>
+                            <td class="s-amount">
+                                <div class="buy-num">
+                                    <a href="#" class="minus">-</a>
+                                    <input type="text" class="text-amount" name="" id="" value="1">
+                                    <a href="#" class="plus">+</a>
+                                </div>
+                            </td>
+                            <td class="s-agio">
+                                <span class="icon">团购</span>
+                            </td>
+                            <td class="s-total">
+                                <em>16164</em>
+                            </td>
+                            <td class="s-del">
+                                <div class="s-delbox">
+                                    <a href="#">移入收藏夹</a>
+                                    <a href="#">删除</a>
+                                </div>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <div class="total-price">商品总价
+                	<span>（不含运费）</span>：<em>¥</em>
+                	<em class="total-cart-price">0</em>
+                </div>
+				<div class="order-foot clearfix">
+					<label>
+						<a id="cleargoods" href="#">批量删除</a>
+                        <a href="../index.html" class="go-shopping">&lt;&lt;继续购物</a>
+						<input type="submit" value="去结算" name="submitCart" class="accounting-btn">			
+					</label>
+				</div>
+            </div>
+        </form>
+    </div>
+    <!-- 公用底部 -->
+    <div class="footer-nav-bar">
+        <div class="wrapper">
+            <div class="partners" style="height:auto;">
+                <span class="label">合作伙伴：</span>
+                <p>
+                    <a href="#">卷皮网</a>|
+                    <a href="#">电子商务平台</a>|
+                    <a href="#">中国电子银行网</a>|
+                    <a href="#">华为商城</a>|
+                    <a href="#">三帝贸易网</a>|
+                    <a href="#">团购</a>|
+                    <a href="#">eNet商城</a>|
+                    <a href="#">易趣</a>|
+                    <a href="#">家具网</a>|
+                    <a href="#">手表品牌大全</a>|
+                    <a href="#">钻石</a>|
+                    <a href="#">伊秀女性网</a>|
+                    <a href="#">华强电子网</a>|
+                    <a href="#">电子产品世界</a>|
+                    <a href="#">挖东西比价网</a>|
+                    <a href="#">广告网</a>|
+                    <a href="#">易购网</a>|
+                </p>
+            </div>
+            <div class="footer-nav">
+                <a href="#">中关村在线</a>|<a href="#">ZOL商城</a>|<a href="#">Z团</a>|<a href="#">限时抢购</a>|<a href="#">经销商</a>|<a href="#">产品报价</a>|<a href="#">论坛</a>|<a href="#">问答</a>
+            </div>
+            <div class="copyright">
+                <a href="#">关于ZOL商城</a>|<a href="#">帮助中心</a>|<a href="#">联系我们</a>|<a href="#">发展历程</a>|<a href="#">媒体报道</a>
+            </div>
+            <div class="copyright">
+                <span style="margin-left:-5px;">©2016 中关村在线 版权所有.<a href="#">京ICP证150096号</a>&nbsp;&nbsp; 京ICP备14061128号 &nbsp;&nbsp;<a href="#">京公网安备11010802020026号</a><a href="#">网络文化经营许可证京网文[2016]1631-199</a>
+                        </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

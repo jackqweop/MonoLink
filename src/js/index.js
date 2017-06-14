@@ -11,10 +11,7 @@ require(['config'], function() {
                 var fn = this.className.split(' ')[1];
                 data[fn]();
             });
-            //懒加载
-            // $("img.lazy").lazyload({
-            //     effect: "fadeIn"
-            // });
+
             //吸顶
             if ($("#suction-tip").length > 0) {
                 var Tip = $("#suction-tip");
@@ -59,55 +56,69 @@ require(['config'], function() {
                     $(".widget").fadeOut('slow');
                 }
             });
-            let pageNo =1;
-            let qty = 10 ;
+            let pageNo = 1;
+            let qty = 10;
             $.ajax({
 
                 url: '../src/api/indexs.php',
                 dataType: 'json',
-                data:{
-                    page:pageNo,
-                    qty:21
+                data: {
+                    page: pageNo,
+                    qty: 21
                 },
                 success: function(data) {
-                    // console.log(data)
-                    // return;
-                	let $indexlist = $('.commodity-list');
-                    let html =data.map(item => {
+
+                    let $indexlist = $('.commodity-list');
+                    let html = data.map(item => {
                         return `
-							<li class="commodity-item">
-                <a class="commodity-item-link" href="html/datapage.html">
-                    <div class="item-pic">
-                        <div class="pic-img">
-                            <img class="lazy" data-src="http://localhost/ztuan/src/${item.imgurl}" src="${item.imgurl}">
-                        </div>
-                    </div>
-                    <div class="item-info">
-                        <div class="item-desc">
-                            <p class="item-name">${item.name}</p>
-                            
-                        </div>
-                        <div class="item-detail clearfix">
-                            <div class="item-detail-left">
-                                <div class="item-price">
-                                    <span class="xj-price"><em>￥</em><span>${item.price}</span></span>
+                              <li class="commodity-item">
+                                <a class="commodity-item-link" href="#" id="${item.id}">
+                                    <div class="item-pic">
+                                        <div class="pic-img">
+                                            <img class="lazy" data-original="http://localhost/ztuan/src/${item.imgurl}" src="${item.imgurl}">
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="item-desc">
+                                            <p class="item-name">${item.name}</p>
+                                            
+                                        </div>
+                                        <div class="item-detail clearfix">
+                                            <div class="item-detail-left">
+                                                <div class="item-price">
+                                                    <span class="xj-price"><em>￥</em><span>${item.price}</span></span>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="item-btn">
+                                                <span class="item-btn-con">马上抢</span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
                                     
-                                </div>
-                                
-                            </div>
-                            <div class="item-btn">
-                                <span class="item-btn-con">马上抢</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </a>
-            </li>
-            			`
+                                </a>
+                            </li>
+
+                        `
                     }).join('');
                     $indexlist.html(html);
+                    //懒加载
+                    $("img.lazy").lazyload({
+                        effect: "fadeIn"
+                    });
+
                 }
-            })
+
+            });
+            $list = $('.commodity-list');
+
+            $list.on('click', 'a', function() {
+                $(location).attr('href', 'html/datapage.html?id=' + this.id);
+
+            });
+
         });
     });
 });
