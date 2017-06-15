@@ -1,5 +1,5 @@
 require(['config'], function() {
-	require(['jquery','gdszoom','fly','common'], function() {
+	require(['jquery','gdszoom','fly','common','com'], function() {
 			
 		        $('.nav-tit,.menu-list').on('mouseenter', function() {
 		            $('.menu-list').show();
@@ -194,6 +194,17 @@ require(['config'], function() {
 					setCookie('goodslist',JSON.stringify(goodslist));
 				}
 			}
-		
+			msg.onclick = function(e) {
+	            e = e || window.event;
+	            var target = e.target || e.srcElement;
+
+	            if (target.tagName.toLowerCase() === 'a') {
+	                var now = new Date('2017-5-9');
+
+	                document.cookie = 'username=null;expires=' + now.toUTCString();
+
+	                location.href = 'http://localhost/ztuan/src/html/datapage.html';
+	            }
+	        }
 	});
 });

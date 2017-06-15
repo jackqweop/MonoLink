@@ -39,5 +39,35 @@ require(['config'],function(){
 				}
 			})
 		})
+
+		var username = document.getElementById('username');
+        var password = document.getElementById('password');
+        var btnLogin = document.getElementById('btnLogin');
+        // var check = document.getElementById('check');
+
+        btnLogin.onclick = function() {
+            var _username = username.value;
+            var _psw = password.value;
+
+            var str1 = 'username=' + _username;
+            var str2 = 'password=' + _psw;
+            // if (check.checked) {
+            //     var now = new Date();
+            //     now.setDate(now.getDate() + 7);
+
+            //     // 有效期1分钟
+            //     // now.setMinutes(now.getMinutes()+1);
+
+            //     str1 += ';expires=' + now.toUTCString();
+            //     str2 += ';expires=' + now.toUTCString();
+            // }
+
+            // 把用户名和密码存入cookie
+            document.cookie = str1+";path=/";
+            document.cookie = str2+";path=/";
+
+            //location.href = 'http://localhost/myproject/src/index.html';
+        }
+
 	});
 }); 

@@ -1,5 +1,5 @@
 require(['config'], function() {
-    require(['jquery'], function($) {
+    require(['jquery','com'], function($) {
         $(document).ready(function() {
             $('.nav-tit,.menu-list').on('mouseenter', function() {
                 $('.menu-list').show();
@@ -25,13 +25,14 @@ require(['config'], function() {
                 var pageQty = Math.ceil(res.total / res.qty);
                 var page_str = '';
                 for (var i = 1; i <= pageQty; i++) {
-                    page_str += `<a ${res.pageNo==i ?'class="sel"' : ''} href="#">${i}</a>`
+                    page_str += `<a  ${res.pageNo==i ?'class="sel"' : ''} href="#">${i}</a>`
                 }
                 $('.page').html(page_str);
             }
         });
         $('.page').on('click', 'a', function() {
-            $(this).parent().addClass('sel').siblings().removeClass('');
+            // console.log(this)
+            $(this).addClass('sel').siblings().removeClass('sel');
 
             pageNo = $(this).text();
             $.ajax({
@@ -93,6 +94,18 @@ require(['config'], function() {
             $indexlist.html(html);
 
         
+        }
+         msg.onclick = function(e) {
+            e = e || window.event;
+            var target = e.target || e.srcElement;
+
+            if (target.tagName.toLowerCase() === 'a') {
+                var now = new Date('2017-5-9');
+
+                document.cookie = 'username=null;expires=' + now.toUTCString();
+
+                location.href = 'http://localhost/ztuan/src/html/list.html';
+            }
         }
 
     });

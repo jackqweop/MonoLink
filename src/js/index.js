@@ -1,5 +1,5 @@
 require(['config'], function() {
-    require(['jquery', 'unslider', 'lazyload'], function() {
+    require(['jquery','unslider','lazyload','com'], function() {
         $(document).ready(function() {
             //轮播图插件
             var chajian = $('#banner').unslider({
@@ -120,5 +120,17 @@ require(['config'], function() {
             });
 
         });
+        msg.onclick = function(e) {
+            e = e || window.event;
+            var target = e.target || e.srcElement;
+
+            if (target.tagName.toLowerCase() === 'a') {
+                var now = new Date('2017-1-19');
+
+                document.cookie = 'username=null;expires=' + now.toUTCString();
+
+                location.href = 'http://localhost/ztuan/src/index.html';
+            }
+        }
     });
 });

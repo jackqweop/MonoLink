@@ -1,5 +1,5 @@
 require(['config'], function() {
-	require(['common'],function(){
+	require(['common','com'],function(){
 
 		var carList = document.getElementById('cardata');
 		var btnClear = document.getElementById('cleargoods');
@@ -117,6 +117,18 @@ require(['config'], function() {
 				render();
 			}
 		}
-	
+		
+		msg.onclick = function(e) {
+            e = e || window.event;
+            var target = e.target || e.srcElement;
+
+            if (target.tagName.toLowerCase() === 'a') {
+                var now = new Date('2017-5-19');
+
+                document.cookie = 'username=null;expires=' + now.toUTCString();
+
+                location.href = 'http://localhost/ztuan/src/html/car.html';
+            }
+        }
 	});
 });
