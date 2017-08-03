@@ -13,7 +13,7 @@ require(['config'], function() {
 				// var $car = $('#main .car');
 
 				$.ajax({
-					url:'../api/datapage.php',
+					url:'../api/datapage.json',
 						dataType:'json',
 						data:{
 							id:a
