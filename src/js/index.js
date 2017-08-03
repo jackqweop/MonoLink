@@ -60,7 +60,7 @@ require(['config'], function() {
             let qty = 10;
             $.ajax({
 
-                url: '../src/api/indexs.php',
+                url: '../src/api/indexs.json',
                 dataType: 'json',
                 data: {
                     page: pageNo,

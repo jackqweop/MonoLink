@@ -12,7 +12,7 @@ require(['config'], function() {
         let qty = 15;
         $.ajax({
 
-            url: '../api/list.php',
+            url: '../api/list.json',
             dataType: 'json',
             data: {
                 page: pageNo,
